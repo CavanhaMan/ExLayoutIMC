@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- RODRIGO CAVANHAMAN -->
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,22 +10,27 @@
 
         <ImageView
             android:id="@+id/imagem"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+            android:textSize="15sp"
             android:layout_column="0"
             android:layout_row="0"
+            android:layout_columnSpan="3"
             android:src="@drawable/images" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Informe seu peso: "
+        android:textSize="15sp"
+        android:layout_weight="1"
         android:layout_column="0"
         android:layout_row="1" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_columnSpan="2"
         android:layout_column="1"
         android:layout_row="1" />
 
@@ -32,11 +38,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Informe sua altura: "
+        android:textSize="15sp"
+        android:layout_weight="1"
         android:layout_column="0"
         android:layout_row="2" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_columnSpan="2"
+        android:layout_weight="1"
         android:layout_column="1"
         android:layout_row="2" />
 
@@ -44,14 +55,14 @@
         android:id="@+id/btcalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_column="0"
+        android:layout_column="1"
         android:layout_row="3"
         android:background="#858585"
         android:fontFamily="monospace"
         android:text="CALCULAR"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="30sp"
+        android:textSize="15sp"
         android:textStyle="bold" />
 
 
