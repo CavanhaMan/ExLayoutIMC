@@ -8,15 +8,65 @@
     android:orientation="vertical"
     tools:context="com.professorangoti.imc.MainActivity">
 
-        <ImageView
-            android:id="@+id/imagem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:layout_column="0"
-            android:layout_row="0"
-            android:layout_columnSpan="3"
-            android:src="@drawable/images" />
+    <!-- PESO PADRAO -->
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_row="0"
+        android:src="@drawable/images"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+    <!-- ABAIXO DO PESO  -->
+    <ImageView
+        android:id="@+id/imagem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_row="0"
+        android:src="@drawable/images1"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <!-- PESO NORMAL -->
+    <ImageView
+        android:id="@+id/imagem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_row="0"
+        android:src="@drawable/images2"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <!-- ACIMA DO PESO  -->
+    <ImageView
+        android:id="@+id/imagem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_row="0"
+        android:src="@drawable/images3"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <!-- PESO OBESO -->
+    <ImageView
+        android:id="@+id/imagem4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_row="0"
+        android:src="@drawable/images4"
+        android:textSize="15sp"
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +79,7 @@
         />
 
     <TextView
-        android:layout_width="200"
+        android:layout_width="200sp"
         android:layout_height="wrap_content"
         android:layout_row="1"
         android:layout_column="1"
@@ -47,7 +97,7 @@
         android:layout_column="0"
         />
     <TextView
-        android:layout_width="200"
+        android:layout_width="200sp"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:layout_columnSpan="2"
@@ -73,7 +123,8 @@
         android:textStyle="bold" />
 
 
-
+<!-- O cálculo do IMC é feito
+dividindo o peso (em quilogramas) pela altura (em metros) ao quadrado. -->
     <!--TextView
         android:id="@+id/imc_id"
         android:layout_width="wrap_content"
